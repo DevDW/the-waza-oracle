@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813650-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120813650-1');
+    </script>
+
+    <title>The Waza Oracle: BJJ Quick Reference Guide</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+      <center>
+        <h1>
+          The Waza Oracle
+        </h1>
+        <h2>Welcome, jiujiteiros.</h2>
+
+        <p>
+          <b>The Waza Oracle</b> ("waza" meaning "technique" in Japanese) is a quick reference guide for Brazilian Jiu-Jitsu.<br><br>
+          Need some ideas to play around with in training to escape, pass, or secure a submission from a certain position?<br><br>
+          <b>1. Choose the position and the desired technique complexity below.</b><br>
+          <b>2. Press the "<i>Let's Roll!</i>" button.</b><br>
+          <b>3. A randomly-selected technique video from a curated library will be provided based on your choices.</b>
+        </p>
+
+        <p>
+          <i>Select the position:</i>
+         <select name="position" id="positionDropdown">
+           <option value="ClosedGuardBottom">Closed Guard (Bottom)</option>
+           <option value="HalfGuardBottom">Half Guard (Bottom)</option>
+           <option value="SideControlBottom">Side Control (Bottom)</option>
+           <option value="KneeOnBellyBottom">Knee-on-Belly (Bottom)</option>
+           <option value="MountBottom">Mount (Bottom)</option>
+           <option value="BackMountYourBackTaken">Back Mount (Your back taken)</option>
+           <option value="ClosedGuardTop">Closed Guard (Top)</option>
+           <option value="HalfGuardTop">Half Guard (Top)</option>
+           <option value="SideControlTop">Side Control (Top)</option>
+           <option value="KneeOnBellyTop">Knee-on-Belly (Top)</option>
+           <option value="MountTop">Mount (Top)</option>
+           <option value="BackMountOpponentsBackTaken">Back Mount (Opponent's back taken)</option>
+          </select>
+        </p>
+
+        <p>
+          <i>Select the technique complexity:</i>
+          <select name="technique-complexity" id="complexityDropdown">
+            <option value="fundamental">Fundamental</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </p>
+        
+        <p>
+          <button id="LetsRollButton" onclick="returnVideo()">Let's Roll!</button>
+        </p>
+        
+        <iframe id="player" src=" " width="" height="" allowfullscreen></iframe>
+        
+        <p>
+          <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSei5wZUBIEQgYS4nLDGLzgK-W2gENyBfEawxeKTASh6fGNUNg/viewform?usp=sf_link">Do you have comments, requests, or suggestions for The Waza Oracle? Please fill out this quick Google Form to let me know!</a></b>
+        </p>
+        
+      </center>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <!--<div class="glitchButton" style="position:fixed;top:550px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <img src="https://goo.gl/iUsYo5" style="position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;opacity:0.28">
+  </body>
+</html>
